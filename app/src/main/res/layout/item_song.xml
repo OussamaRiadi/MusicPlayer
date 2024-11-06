@@ -1,0 +1,37 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="12dp"
+    android:background="?attr/selectableItemBackground">
+
+    <ImageView
+        android:id="@+id/ivAlbumThumbnail"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignParentStart="true"
+        android:contentDescription="Album Art"
+        android:scaleType="centerCrop"
+        android:src="@drawable/vinyl" />
+
+    <TextView
+        android:id="@+id/tvSongTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@id/ivAlbumThumbnail"
+        android:layout_marginStart="16dp"
+        android:text="Song Title"
+        android:textColor="#FFFFFF"
+        android:textSize="16sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/tvArtistName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@id/ivAlbumThumbnail"
+        android:layout_below="@id/tvSongTitle"
+        android:layout_marginStart="16dp"
+        android:text="Artist Name"
+        android:textColor="#CCCCCC"
+        android:textSize="14sp" />
+</RelativeLayout>
